@@ -1,0 +1,137 @@
+body {
+    background: linear-gradient(135deg, #ffccd5, #ffe6f0);
+    font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+h2 {
+    color: #ff5e78;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.3);
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    animation: bounce 2s infinite;
+}
+
+form {
+    background: #fff0f5;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 3px solid #ff99cc;
+    max-width: 350px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+form::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, #ff69b4, transparent);
+    opacity: 0.3;
+    z-index: 0;
+}
+
+form::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, #ffb6c1, transparent);
+    opacity: 0.3;
+    z-index: 0;
+}
+
+label {
+    color: #ff4081;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 1;
+    position: relative;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ff80ab;
+    border-radius: 10px;
+    font-size: 1em;
+    background: #fff8fa;
+    color: #c2185b;
+    transition: all 0.3s ease;
+    z-index: 1;
+    position: relative;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ff1744;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(255, 23, 68, 0.5);
+}
+
+button {
+    background: linear-gradient(45deg, #ff4081, #f50057);
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    z-index: 1;
+    position: relative;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255, 64, 129, 0.4);
+}
+
+p {
+    margin-top: 20px;
+    color: #d81b60;
+    font-size: 1em;
+    z-index: 1;
+    position: relative;
+}
+
+a {
+    color: #ff1744;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ad1457;
+    text-decoration: underline;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}

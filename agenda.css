@@ -1,0 +1,27 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+.div-voltar {
+    text-align: end;
+    margin-top: 20px;
+}
+a.link-voltar {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #0077cc;
+    border: 2px solid #0077cc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: aliceblue;
+}
+
+a.link-voltar:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: #e0f0ff;
+}
